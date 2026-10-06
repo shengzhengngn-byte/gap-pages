@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>自社が補助金の対象かを30秒で判定(小規模事業者向け・事前登録)</title>
+<meta name="description" content="業種・従業員数などから、当てはまりそうな補助金の候補と公募期限を出すツールの事前登録です。申請書の作成・代行はしません。">
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#5b6470;--line:#e3dfd6;--accent:#1d5fd1;--accent-fg:#fff;--warn-bg:#fff4d6;--warn-fg:#5c4400;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#15171a;--fg:#e8eaed;--muted:#9aa3ae;--line:#2b2f35;--accent:#6ea2ff;--accent-fg:#0b1220;--warn-bg:#3a3010;--warn-fg:#f3dd9a;--card:#1c1f23}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Hiragino Sans","Yu Gothic UI","Meiryo",system-ui,sans-serif;line-height:1.8;font-size:16px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px 56px}
+.notice{background:var(--warn-bg);color:var(--warn-fg);padding:10px 16px;font-size:14px;text-align:center}
+h1{font-size:clamp(24px,5.2vw,34px);line-height:1.35;margin:36px 0 12px}
+h2{font-size:20px;margin:36px 0 10px;padding-top:6px;border-top:1px solid var(--line)}
+p{margin:0 0 12px}
+ul{margin:0 0 12px;padding-left:1.3em}
+li{margin-bottom:6px}
+.lead{font-size:18px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-fg);padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:700;margin:8px 0}
+a{color:var(--accent)}
+.small{font-size:13px;color:var(--muted)}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line)}
+</style>
+<!-- ANALYTICS: アクセス解析を使うときは、下の1行のコメントを外し、YOUR_TOKEN を Cloudflare Web Analytics の発行する値に差し替える
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN"}'></script>
+-->
+</head>
+<body>
+<div class="notice">開発中です。いまは事前登録だけを受け付けています。まだ使えるサービスではありません。</div>
+<div class="wrap">
+<h1>自社が補助金の対象かを、30秒で。</h1>
+<p class="lead">補助金は制度ごとに要件が違います。まずは「当てはまりそうか」だけを、短い入力で確かめるツールを作ろうとしています。</p>
+<p><!-- REPLACE: 下のURLを、実際のフォームのURLに差し替える (hojokin) --><a class="btn" href="https://example.com/form-hojokin">事前登録する(無料)</a></p>
+
+<h2>こんな困りごとがあります</h2>
+<p>Yahoo!知恵袋には、次のような質問と回答があります。</p>
+<ul>
+<li>小規模事業者持続化補助金は、小売・サービス業なら常時雇用の従業員が5名以下であることが要件になる、という回答(<a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14314848979">知恵袋の質問</a>)</li>
+<li>申請の方法が複雑と感じ、結局、申請を断念したという質問者(<a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14265740769">知恵袋の質問</a>)</li>
+</ul>
+<p class="small">このツールが、これらの困りごとを解決できるかは、まだ分かりません。必要とされている方の声を聞いて決めたいと考えています。</p>
+
+<h2>作ろうとしているもの</h2>
+<ul>
+<li>業種・従業員数・開業時期・地域を入力すると、当てはまりそうな補助金の候補を出す</li>
+<li>候補ごとに、公募期限を示し、期限の前にメールでお知らせする</li>
+<li>対応する補助金は、事前登録いただいた方の声を聞いて決める</li>
+</ul>
+
+<h2>できないこと(先にお伝えします)</h2>
+<ul>
+<li>申請書の作成・代行はしません。</li>
+<li>判定は目安です。最終的な確認は、各補助金の公募要領で行ってください。</li>
+<li>採択されることを保証するものではありません。</li>
+</ul>
+
+<h2>事前登録について</h2>
+<p>登録は、リリースの案内と、機能を決めるための聞き取りのために使います。登録しても、料金は発生しません。内容が合わなければ、いつでも案内の停止を連絡できます。</p>
+<p><!-- REPLACE: 下のURLを、実際のフォームのURLに差し替える (hojokin) --><a class="btn" href="https://example.com/form-hojokin">事前登録する(無料)</a></p>
+
+<footer>
+<h2 style="border:0;margin-top:0">個人情報の取り扱い</h2>
+<p class="small">お預かりするのは、メールアドレスと、フォームに書いていただいた内容です。リリースの案内と、サービスの内容を決める聞き取りのためだけに使い、第三者には提供しません。削除を希望される場合は、下記までご連絡ください。ページの利用状況を知るため、個人を特定しない形でアクセス解析を使うことがあります。</p>
+<p class="small"><!-- REPLACE: 運営者名と連絡先を差し替える -->運営者: 【運営者名を入れる】 / 連絡先: 【メールアドレスを入れる】</p>
+</footer>
+</div>
+</body>
+</html>
